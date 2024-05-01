@@ -12,14 +12,14 @@ from uuid import uuid4
 app = Flask(__name__)
 
 
-@app.route("/2-hbnb/", strict_slashes=False)
+@app.route("/4-hbnb/", strict_slashes=False)
 def hbnb_filters():
     """Displays an HTML page with a hbnb_filters
     """
     states = storage.all(State)
     amenities = storage.all(Amenity)
     places = storage.all(Place)
-    return render_template("2-hbnb.html", states=states,
+    return render_template("4-hbnb.html", states=states,
                            amenities=amenities,
                            places=places,
                            cache_id=str(uuid4()))
@@ -32,4 +32,4 @@ def teardown(exc):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port="5001", debug=True)
+    app.run(host="0.0.0.0", port="5001")

@@ -53,7 +53,7 @@ article {
 }
 
 .information {
-	display: block;
+	display: flex;
 	height: 80px;
 	width: 100%;
 	border-top: 1px solid #DDDDDD;
@@ -66,7 +66,7 @@ article {
 }
 
 .max_guest, .number_rooms, .number_bathrooms {
-	display: inline-block;
+	display: block;
 	width: 100px;
 	text-align: center;
 	margin: 0px auto;
@@ -79,6 +79,8 @@ article {
 
 .description {
 	text-align: left;
+	margin-top: 10px;
+	display: block;
 }
 
 h1 {
@@ -99,28 +101,29 @@ article h2 {
 }
 
 .guest_icon {
-	display: inline-block;
 	background-image: url("../images/icon_group.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 50px;
 	height: 50px;
+	margin: 0px auto;
 }
 
 .bed_icon {
-	display: inline-block;
 	background-image: url("../images/icon_bed.png");
 	background-repeat: no-repeat;
 	background-position: center;
     width: 50px;
     height: 50px;
+	margin: 0px auto;
 }
 
 .bath_icon {
-	display: inline-block;
 	background-image: url("../images/icon_bath.png");
 	background-repeat: no-repeat;
 	background-position: center;
     width: 50px;
     height: 50px;
+	margin: 0px auto;
 }
+
